@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "npx prettier . --write"
+    "prepare": "husky install"
+
   },
   "dependencies": {
     "next": "14.1.0",
@@ -23,5 +25,13 @@
     "eslint-config-prettier": "^9.1.0",
     "prettier": "3.2.4",
     "typescript": "^5"
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "typescript": "^5"
+  },
+  "lint-staged": {
+    "*.{js, jsx, ts, tsx}": "eslint --cache --fix",
+    "*.{js, css, md}": "prettier --write"
+
   }
 }
