@@ -61,7 +61,7 @@ export default function Home() {
           <h2>
             Learn <span>-&gt;</span>
           </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+          <p>Learn about Next.js in an interactive course with&nbsp;quizzes! Test Test and Test.</p>
         </a>
 
         <a
@@ -73,7 +73,7 @@ export default function Home() {
           <h2>
             Templates <span>-&gt;</span>
           </h2>
-          <p>Explore starter templates for Next.js.</p>
+          <p>Explore starter templates for Next.js. Test Test and Test.</p>
         </a>
 
         <a
@@ -87,6 +87,9 @@ export default function Home() {
           </h2>
           <p>
             Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Test Test and Test.
+            Test Test and Test.
+            Test Test and Test.
           </p>
         </a>
       </div>
