@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  app:
+    image: openai-demo-app
+    build:
+      context: ./
+      target: dev
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - '3000:3000'
+# version : '3.8' sepcifies the version of Docker Compose we want to use. I only have one service in this case and that will be app, but you can add more to it based on your needs.
+
+# Build context specifies the current directory and target specifies the stage you want to build the Docker image with. If you want to run in production, simply set target:production.
+
+# Volume tells Docker to copy contents from the local directory ./ of the host to /app directory on the Docker container.
+
+# Finally, we map port 3000 on the host machine to port 3000 of the container. We exposed port 3000 when we built the container, and our app will also runs on 3000.
